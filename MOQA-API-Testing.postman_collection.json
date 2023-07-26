@@ -105,8 +105,11 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Response has 10 users\", function () {\r",
-							"    for (let i = 0; i < 10; i++) {\r",
-							"        let jsonData = pm.response.json();\r",
+							"    let jsonData = pm.response.json();\r",
+							"\r",
+							"    pm.expect(jsonData.length).to.eql(10);\r",
+							"\r",
+							"    for (let i = 0; i < 10; i++) {        \r",
 							"        pm.expect(jsonData[i].id).to.eql(i+1);\r",
 							"    }\r",
 							"});\r",
