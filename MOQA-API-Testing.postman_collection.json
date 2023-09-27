@@ -121,7 +121,13 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{TokenType}} {{AccessToken}}",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{URL}}/users",
 					"host": [
