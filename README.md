@@ -41,6 +41,11 @@ From Postman UI:
     - Add header:
         - Key: Authorization
         - Value: Bearer {AccessToken}
+    - Add Body:
+        {
+            "username": "teppo.testaaja",
+            "password": "V3ryS3cr3t!"
+        }
     - Tests: Add code from tests_login.js
 3. Add GET request
     - URL: https://jsonplaceholder.typicode.com/users
