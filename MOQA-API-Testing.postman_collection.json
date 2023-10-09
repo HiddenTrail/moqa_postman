@@ -1,11 +1,10 @@
 {
 	"info": {
-		"_postman_id": "8a4727aa-7806-437f-8b2e-8381102fcc83",
+		"_postman_id": "734a6738-7f20-42d2-ad53-000bfd7ab51d",
 		"name": "MOQA - API Testing",
 		"description": "Masters of QA - API Testing with Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "20478477",
-		"_collection_link": "https://solar-crescent-283541.postman.co/workspace/PostmanDemo~2be1e95b-3714-4c1a-979a-1e56d9353468/collection/20478477-8a4727aa-7806-437f-8b2e-8381102fcc83?action=share&source=collection_link&creator=20478477"
+		"_exporter_id": "20478477"
 	},
 	"item": [
 		{
