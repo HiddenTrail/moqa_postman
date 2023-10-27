@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "734a6738-7f20-42d2-ad53-000bfd7ab51d",
+		"_postman_id": "ff6b7e4b-2e7c-4322-82e9-01e982fa51d8",
 		"name": "MOQA - API Testing",
 		"description": "Masters of QA - API Testing with Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -19,7 +19,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Response has access token and token type\", function () {\r",
-							"    let responseText = pm.response.text()\r",
+							"    let responseText = pm.response.text();\r",
 							"    pm.expect(responseText).to.include(\"access_token\");\r",
 							"    pm.expect(responseText).to.include(\"token_type\");\r",
 							"});\r",
@@ -104,9 +104,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Response has 10 users\", function () {\r",
-							"    let jsonData = pm.response.json();\r",
+							"let jsonData = pm.response.json();\r",
 							"\r",
+							"pm.test(\"Response has 10 users\", function () {\r",
 							"    pm.expect(jsonData.length).to.eql(10);\r",
 							"\r",
 							"    for (let i = 0; i < 10; i++) {        \r",
